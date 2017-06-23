@@ -7,4 +7,5 @@ It’s an app that lets you draw with simulated cells! Made in processing and in
 [Preview on Vimeo](https://vimeo.com/fr/upload)
 
 ---
-![alt text](https://github.com/kittrick/mitosis_draw/blob/master/example.png?raw=true)
+[Dark drawing on white](https://github.com/kittrick/mitosis_draw/blob/master/example_1.png?raw=true)
+[Drawing on black](https://github.com/kittrick/mitosis_draw/blob/master/example_2.png?raw=true)
