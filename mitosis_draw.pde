@@ -33,7 +33,6 @@ void draw(){
 
 void renderUI(){
   noStroke();
-  stroke(0);
   fill(bkg, 200);
   rect(0, 0, 200, 140);
   fill(fg);

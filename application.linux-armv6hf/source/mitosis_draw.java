@@ -21,9 +21,12 @@ boolean eraser;
 int bkg = 255;
 int fg = 0;
 boolean ui = true;
+PFont font;
 
 public void setup(){
   
+  font = createFont("OratorStd.otf", 12);
+  textFont(font);
   cells = new ArrayList<Cell>();
   eraser = false;
   background(bkg);
@@ -47,19 +50,20 @@ public void draw(){
 public void renderUI(){
   noStroke();
   fill(bkg, 200);
-  rect(0, 0, 175, 120);
+  rect(0, 0, 200, 140);
   fill(fg);
   String command[] = {
     "P: pencil",
     "E: eraser",
     "S: save",
     "B: toggle background",
-    "M: murder"
+    "M: murder",
+    "ESC: quit"
   };
-  int ypos = 0;
+  int ypos = 25;
   for(String c: command){
-    ypos += 20;
     text(c, 20, ypos);
+    ypos += 20;
   }
 }
 
@@ -102,7 +106,7 @@ public void keyPressed() {
       break;
     case 's':
     case 'S':    
-      save("screnshot-"+millis()+".png");
+      save("screnshot-"+millis()+random(10)+".png");
       break;
     case 'm':
     case 'M':
